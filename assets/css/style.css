@@ -85,10 +85,14 @@ main {padding:80px 0 100px;}
 
 .header {height:98px; width:100%; background-color:#414959; color:#fff;}
 .header .container { display: flex; flex-flow: row nowrap; justify-content: space-between;}
-.header__left {display:flex; flex-direction:column; justify-content: center; height:98px;}
+.header__left {width:calc(50% - 128px); display:flex; flex-direction:column; justify-content: center; height:98px;}
 .header__left-button {font-size:0.875rem; text-decoration: none; font-weight: bold; text-transform: uppercase; height:43px; background-color: #d8171e; width: 133px; display: flex; align-items: center; justify-content: center;}
 .header__logo {height: 115px; width: 256px; background-color: #e81b23;}
-.header__right {display: inline-flex; justify-content: flex-end; flex-flow: row nowrap;}
+.header__right {width:calc(50% - 128px); font-weight:bold; display: inline-flex; justify-content: flex-end; flex-flow: row nowrap; font-size: 0.750rem; text-transform: uppercase;}
+.header__right li {display: inline-block;}
+.header__right a {text-decoration: none; line-height: 98px; padding: 10px;}
+.header__right-menu {margin-left: 20px; position: relative; margin-top: 6px;}
+.header__right-menu:before {content:"\e5d2"; font-family: "Material Icons"; font-size: 42px; position: absolute; top:-12px; left: 6px;}
 
 @media only screen and (min-width : 480px) {}
 @media only screen and (min-width : 768px) {}
@@ -113,7 +117,7 @@ main {padding:80px 0 100px;}
 	Social Share
 ---------------------------*/
 
-.social-share {margin-top:10px;}
+.social-share {margin-top:10px; font-size:0.875rem;}
 .social-share__button {padding:10px; position:relative; width:160px; height: 46px; background-color: #3a589a; display: inline-flex; margin-right: -5px; color: #fff; text-decoration:none; align-items: center;}
 .social-share__button:before {content:""; background: url('../img/facebook.png'); background-position:center center; background-repeat: no-repeat; width: 22px; height: 22px; display: block; }
 .social-share__button--twitter {background-color: #20a8e4;}
