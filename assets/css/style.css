@@ -113,11 +113,11 @@ main {padding:80px 0 100px;}
 	Social Share
 ---------------------------*/
 
-.social-share {}
+.social-share {margin-top:10px;}
 .social-share__button {padding:10px; position:relative; width:160px; height: 46px; background-color: #3a589a; display: inline-flex; margin-right: -5px; color: #fff; text-decoration:none; align-items: center;}
-.social-share__button:before {content:""; background: url('assets/img/facebook.png'); width: 22px; height: 22px; display: block; position: absolute;}
+.social-share__button:before {content:""; background: url('../img/facebook.png'); background-position:center center; background-repeat: no-repeat; width: 22px; height: 22px; display: block; }
 .social-share__button--twitter {background-color: #20a8e4;}
-.social-share__button--twitter:before {background: url('assets/img/twitter.png');}
+.social-share__button--twitter:before {background: url('../img/twitter.png'); background-position:center center; background-repeat: no-repeat;}
 .social-share div {margin-bottom: 15px; text-transform: uppercase;}
 
 @media only screen and (min-width : 480px) {}
