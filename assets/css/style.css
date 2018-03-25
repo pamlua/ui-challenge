@@ -24,7 +24,7 @@ header, footer, nav, article, section, main { display: block; }
 ::-moz-placeholder { color: #ccc; opacity: 1; }
 ::-ms-clear { display: none; }
 select.__placeholder { color: #ccc; opacity: 1; }
-input, textarea, select { background: none; margin: 0; padding: 0; display: block; width: 100%; line-height: normal;
+input, textarea, select { background: none; margin: 0; padding: 0; line-height: normal;
 	-moz-user-select: text; 
 	-webkit-user-select: text; 
 	-ms-user-select: text;
@@ -115,7 +115,7 @@ main {padding:80px 0 100px;}
 
 .social-share {}
 .social-share__button {padding:10px; position:relative; width:160px; height: 46px; background-color: #3a589a; display: inline-flex; margin-right: -5px; color: #fff; text-decoration:none; align-items: center;}
-.social-share__button:before {background: url('assets/img/facebook.png'); width: 22px; height: 22px; display: block; position: absolute;}
+.social-share__button:before {content:""; background: url('assets/img/facebook.png'); width: 22px; height: 22px; display: block; position: absolute;}
 .social-share__button--twitter {background-color: #20a8e4;}
 .social-share__button--twitter:before {background: url('assets/img/twitter.png');}
 .social-share div {margin-bottom: 15px; text-transform: uppercase;}
@@ -143,12 +143,20 @@ main {padding:80px 0 100px;}
 .form {margin-top: 70px;}
 .form .headline {margin-bottom: 30px;}
 .form-element {display: block; margin: 0 0 40px 0;}
+.form-element div {margin-left: 15px;}
 .form-element__label {display: inline-block; margin-bottom: 15px;}
 
-.form-element input[type="radio"] + label {cursor:pointer; text-align:center; transition:all 0.5s; width: calc(25% - 50px); position: relative; margin-left: 25px; background-color: #fff; padding: 25px; border:1px solid #e6e6e6; border-top: 10px solid #d8171e;}
-.form-element input[type="radio"]:checked + label {border-color: #414959; background-color: #688fa4; color:#fff;}
+.form-element input[type="checkbox"], .form-element input[type="radio"] { display: none; }
 
-.form-element--horizontal input[type="radio"] + label {text-align:left; width:calc(100% - 30px); border:none; border-left: 30px solid #d8171e; text-transform: uppercase;}
+.form-element input[type="checkbox"] + label {border:3px solid #ebebeb; background-color: #fff; padding:10px 15px; width:calc(25% - 9px); margin-right: 12px;}
+.form-element input[type="checkbox"] + label span:before {content:"\E835"; color:#ccc; margin-right:10px; font-size: 20px;}
+.form-element input[type="checkbox"]:checked + label span:before {content:"\E834";}
+
+.form-element input[type="radio"] + label {vertical-align:top; cursor:pointer; text-align:center; transition:all 0.5s; width: calc(25% - 28px); position: relative;  background-color: #fff; padding: 25px; border:1px solid #e6e6e6; border-top: 10px solid #d8171e;}
+.form-element input[type="radio"]:checked + label {border-color: #414959; background-color: #688fa4; color:#fff;}
+.form-element--horizontal input[type="radio"] + label {margin-left: 25px; text-align:left; width:calc(100% - 30px); border:none; border-left: 30px solid #d8171e; text-transform: uppercase;}
+
+.form-element__submit {margin:0 auto; color:#fff; font-size: 1rem; text-decoration: none; font-weight: bold; text-transform: uppercase; height: 46px; background-color: #d8171e; padding:0 30px; display: flex; align-items: center; justify-content: center;}
 
 @media only screen and (min-width : 480px) {}
 @media only screen and (min-width : 768px) {}

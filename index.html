@@ -7,6 +7,7 @@
 
 	<!-- Stylesheets -->
 	<link rel='stylesheet'  href='assets/css/style.css' type='text/css' media='all' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 			
 	<!-- Javascript -->
 	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -48,64 +49,68 @@
 				<a href="" class="social-share__button social-share__button--twitter">(100)</a>
 			</div>
 			<form id="quiz" class="form">
-				<div class="form-element">
+				<div class="form-element form-element--img">
 					<h3 class="headline headline--3">1. Choose a snack.</h3>
-					<input type="radio" id="colorado" name="choose-snack" />
-					<label class="form-element__label" for="colorado"><span></span>Black Cherries</label>
-					<input type="radio" id="california" name="choose-snack" />
-					<label class="form-element__label" for="california"><span></span>Jelly Beans</label>
-					<input type="radio" id="campdavid" name="choose-snack" />
-					<label class="form-element__label" for="campdavid"><span></span>Popcorn</label>
-					<input type="radio" id="mississippi" name="choose-snack" />
-					<label class="form-element__label" for="mississippi"><span></span>Pigs in a Blanket</label>
+						<input type="checkbox" id="black-cherries" name="choose-snack" />
+						<label class="form-element__label" for="black-cherries"><span></span>Black Cherries</label>
+						<input type="checkbox" id="jelly-beans" name="choose-snack" />
+						<label class="form-element__label" for="jelly-beans"><span></span>Jelly Beans</label>
+						<input type="checkbox" id="popcorn" name="choose-snack" />
+						<label class="form-element__label" for="popcorn"><span></span>Popcorn</label>
+						<input type="checkbox" id="pigs-in-a-blanket" name="choose-snack" />
+						<label class="form-element__label" for="pigs-in-a-blanket"><span></span>Pigs in a Blanket</label>
 				</div>
 				<div class="form-element">
 					<h3 class="headline headline--3">2. Choose a vacation.</h3>
-					<input type="radio" id="colorado" name="choose-vacation" />
-					<label class="form-element__label" for="colorado"><span></span>Colorado</label>
-					<input type="radio" id="california" name="choose-vacation" />
-					<label class="form-element__label" for="california"><span></span>California</label>
-					<input type="radio" id="campdavid" name="choose-vacation" />
-					<label class="form-element__label" for="campdavid"><span></span>Camp David</label>
-					<input type="radio" id="mississippi" name="choose-vacation" />
-					<label class="form-element__label" for="mississippi"><span></span>Mississippi</label>
+					<div>
+						<input type="radio" id="colorado" name="choose-vacation" />
+						<label class="form-element__label" for="colorado">Colorado</label>
+						<input type="radio" id="california" name="choose-vacation" />
+						<label class="form-element__label" for="california">California</label>
+						<input type="radio" id="campdavid" name="choose-vacation" />
+						<label class="form-element__label" for="campdavid">Camp David</label>
+						<input type="radio" id="mississippi" name="choose-vacation" />
+						<label class="form-element__label" for="mississippi">Mississippi</label>
+					</div>
 				</div>
 				<div class="form-element form-element--horizontal">
 					<h3 class="headline headline--3">3. Choose an animal.</h3>
 					<input type="radio" id="bear" name="choose-animal" />
-					<label class="form-element__label" for="bear"><span></span>Bear</label>
+					<label class="form-element__label" for="bear">Bear</label>
 					<input type="radio" id="bobcat" name="choose-animal" />
-					<label class="form-element__label" for="bobcat"><span></span>Bobcat</label>
+					<label class="form-element__label" for="bobcat">Bobcat</label>
 					<input type="radio" id="horse" name="choose-animal" />
-					<label class="form-element__label" for="horse"><span></span>Horse</label>
+					<label class="form-element__label" for="horse">Horse</label>
 					<input type="radio" id="dog" name="choose-animal" />
-					<label class="form-element__label" for="dog"><span></span>Dog</label>
+					<label class="form-element__label" for="dog">Dog</label>
 				</div>
 				<div class="form-element">
 					<h3 class="headline headline--3">4. Choose two articles of clothing.</h3>
-					<input type="checkbox" id="cowboyboots" name="choose-clothing" />
-					<label class="form-element__label" for="cowboyboots"><span></span>Cowboy boots</label>
-					<input type="checkbox" id="tophat" name="choose-clothing" />
-					<label class="form-element__label" for="tophat"><span></span>Top Hat</label>
+					<input type="checkbox" id="cowboy-boots" name="choose-clothing" />
+					<label class="form-element__label" for="cowboy-boots"><span></span>Cowboy boots</label>
+					<input type="checkbox" id="top-hat" name="choose-clothing" />
+					<label class="form-element__label" for="top-hat"><span></span>Top Hat</label>
 					<input type="checkbox" id="socks" name="choose-clothing" />
 					<label class="form-element__label" for="socks"><span></span>Socks</label>
 					<input type="checkbox" id="bowtie" name="choose-clothing" />
 					<label class="form-element__label" for="bowtie"><span></span>Bowtie</label>
 				</div>
-				<button type="submit">Show me my results!</button>
+				<button type="submit" class="form-element__submit">Show me my results!</button>
 			</form>
-			<div class="results">
-				<div class="results__text">
-					<h4 class="headline headline--4">Which Republican President Are You?</h4>
-					<h3 class="results__heading headline headline--3">You Got: Teddy Roosevelt</h3>
-					<p>Roosevelt has also been deemed the country's first environmentalist president. In 1906, he signed the National Monuments Act, protecting sites like the Grand Canyon and preserving countless wildlife sanctuaries, national forests and federal game reserves. He also made headway with the nation’s infrastructure, instigating 21 irrigation projects.</p>
+			<div class="results-container">
+				<div class="results">
+					<div class="results__text">
+						<h4 class="headline headline--4">Which Republican President Are You?</h4>
+						<h3 class="results__heading headline headline--3">You Got: Teddy Roosevelt</h3>
+						<p>Roosevelt has also been deemed the country's first environmentalist president. In 1906, he signed the National Monuments Act, protecting sites like the Grand Canyon and preserving countless wildlife sanctuaries, national forests and federal game reserves. He also made headway with the nation’s infrastructure, instigating 21 irrigation projects.</p>
+					</div>
+					<div class="results__image" style="background-image:url('assets/img/presidents/Teddy.jpg');"></div>
 				</div>
-				<div class="results__image" style="background-image:url('assets/img/presidents/Teddy.jpg');"></div>
-			</div>
-			<div class="social-share">
-				<div>Share your results</div>
-				<a href="" class="social-share__button"><span></span>(100)</a>
-				<a href="" class="social-share__button social-share__button--twitter"><span></span>(100)</a>
+				<div class="social-share">
+					<div>Share your results</div>
+					<a href="" class="social-share__button"><span></span>(100)</a>
+					<a href="" class="social-share__button social-share__button--twitter"><span></span>(100)</a>
+				</div>
 			</div>
 		</section>
 	</main>
