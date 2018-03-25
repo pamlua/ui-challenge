@@ -7,9 +7,10 @@ pageEl.on("click", ".js-SubmitForm", {}, function(evt) {
 	// prevent default action
 	evt.preventDefault();
 
-	
 	if (true) {
+		//todo: logic for choosing presidents
 		$(".js-SubmitForm").hide();
+		//todo: append html to results container
 		$(".results-container").slideDown("slow");
 	} else {
 		//todo: needs to validate form answers upon submission
@@ -37,17 +38,16 @@ pageEl.on("click", ".js-SubmitForm", {}, function(evt) {
 
 });
 
-// function getName() {
-//     var name;
-//     var person = prompt("Please enter your name:", "");
-//     if (person == null || person == "") {
-//         name = "Hello stranger!";
-//     } else {
-//         name = "Hi " + person + "!";
-//     }
-//    document.getElementById("js-Name").innerHTML = name;
-// }
-// getName();
-
+function getName() {
+    var name;
+    var person = prompt("Please enter your name:", "");
+    if (person == null || person == "") {
+        name = "Hello stranger!";
+    } else {
+        name = "Hi " + person + "!";
+    }
+   document.getElementById("js-Name").innerHTML = name;
+}
+getName();
 
 });
