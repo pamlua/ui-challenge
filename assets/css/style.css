@@ -149,7 +149,7 @@ main {padding:80px 0 100px;}
 /*-------------------------
 	Form
 ---------------------------*/
-.form {margin-top: 70px;}
+.form {margin-top: 50px;}
 .form .headline {margin-bottom: 30px;}
 .form-element {display: block; margin: 0 0 40px 0;}
 .form-element div {margin-left: 15px;}
@@ -157,11 +157,12 @@ main {padding:80px 0 100px;}
 
 .form-element input[type="checkbox"], .form-element input[type="radio"] { display: none; }
 
-.form-element input[type="checkbox"] + label {border:3px solid #ebebeb; background-color: #fff; padding:10px 15px; width:calc(25% - 9px); margin-right: 12px;}
-.form-element input[type="checkbox"] + label span:before {content:"\E835"; color:#ccc; margin-right:10px; font-size: 20px;}
-.form-element input[type="checkbox"]:checked + label span:before {content:"\E834";}
+.form-element input[type="checkbox"] + label {transition:all 0.5s;border:3px solid #ebebeb; background-color: #fff; padding:10px 15px; width:calc(25% - 16px); margin-right: 12px;}
+.form-element input[type="checkbox"] + label span:before {vertical-align:middle; margin-top:-3px; content:""; width:15px; height:15px; background-color: #fff; border:2px solid #c4c4c4; display: inline-flex; justify-content: center; align-items: center; margin-right: 10px;}
+.form-element input[type="checkbox"]:checked + label span:before {color:#ccc; content:"\E5ca"; font-family: "Material Icons"; width:15px; height:15px; display: inline-flex; justify-content: center; align-items: center;}
+.form-element input[type="checkbox"]:checked + label {background-color: #c4c4c4;}
 
-.form-element input[type="radio"] + label {vertical-align:top; cursor:pointer; text-align:center; transition:all 0.5s; width: calc(25% - 28px); position: relative;  background-color: #fff; padding: 25px; border:1px solid #e6e6e6; border-top: 10px solid #d8171e;}
+.form-element input[type="radio"] + label {vertical-align:top; cursor:pointer; text-align:center; transition:all 0.5s; width: calc(25% - 4px); position: relative;  background-color: #fff; padding: 25px; border:1px solid #e6e6e6; border-top: 10px solid #d8171e;}
 .form-element input[type="radio"]:checked + label {border-color: #414959; background-color: #688fa4; color:#fff;}
 .form-element--horizontal input[type="radio"] + label {margin-left: 25px; text-align:left; width:calc(100% - 30px); border:none; border-left: 30px solid #d8171e; text-transform: uppercase;}
 
