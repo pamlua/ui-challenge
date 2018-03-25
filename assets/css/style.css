@@ -106,6 +106,22 @@ main {padding:80px 0 100px;}
 
 
 /*-------------------------
+	Social Share
+---------------------------*/
+
+.social-share {}
+.social-share__button {padding:10px; position:relative; width:160px; height: 46px; background-color: #3a589a; display: inline-flex; margin-right: -5px; color: #fff; text-decoration:none; align-items: center;}
+.social-share__button:before {background: url('assets/img/facebook.png'); width: 22px; height: 22px; display: block; position: absolute;}
+.social-share__button--twitter {background-color: #20a8e4;}
+.social-share__button--twitter:before {background: url('assets/img/twitter.png');}
+.social-share div {margin-bottom: 15px; text-transform: uppercase;}
+
+@media only screen and (min-width : 480px) {}
+@media only screen and (min-width : 768px) {}
+@media only screen and (min-width : 992px) {}
+@media only screen and (min-width : 1200px) {}
+
+/*-------------------------
 	Section
 ---------------------------*/
 
@@ -120,10 +136,10 @@ main {padding:80px 0 100px;}
 	Results
 ---------------------------*/
 
-.results {width:100%; border:3px solid #ebebeb; margin:30px 0; background-color: #fff; display: flex;}
+.results {width:100%; border:3px solid #ebebeb; margin:40px 0; background-color: #fff; display: flex;}
 .results__text {padding:40px; flex:1;}
 .results__text p {font-size: 0.938rem; line-height: 27px;}
-.results__image {width:50%; padding-top: 50%; background-color: red; background-repeat: no-repeat; background-size: cover; background-position: center center;}
+.results__image {width:50%; padding-top: 50%; background-repeat: no-repeat; background-size: cover; background-position: center center;}
 .results__heading {font-weight:700; text-transform: uppercase; margin-top: 4px; margin-bottom: 20px; display: inline-block;}
 
 @media only screen and (min-width : 480px) {}
