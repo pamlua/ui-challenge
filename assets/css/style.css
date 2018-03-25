@@ -141,14 +141,14 @@ main {padding:80px 0 100px;}
 	Form
 ---------------------------*/
 .form {margin-top: 70px;}
-.form .headline {margin-bottom: 40px;}
+.form .headline {margin-bottom: 30px;}
 .form-element {display: block; margin: 0 0 40px 0;}
 .form-element__label {display: inline-block; margin-bottom: 15px;}
 
-.form-element input[type="radio"] + label {transition:all 0.5s; width: calc(25% - 50px); position: relative; margin-left: 25px; background-color: #fff; padding: 25px; border-left: 30px solid #d8171e;}
+.form-element input[type="radio"] + label {cursor:pointer; text-align:center; transition:all 0.5s; width: calc(25% - 50px); position: relative; margin-left: 25px; background-color: #fff; padding: 25px; border:1px solid #e6e6e6; border-top: 10px solid #d8171e;}
 .form-element input[type="radio"]:checked + label {border-color: #414959; background-color: #688fa4; color:#fff;}
 
-.form-element--horizontal input[type="radio"] + label {width:calc(100% - 30px); border-left: 30px solid #d8171e; text-transform: uppercase;}
+.form-element--horizontal input[type="radio"] + label {text-align:left; width:calc(100% - 30px); border:none; border-left: 30px solid #d8171e; text-transform: uppercase;}
 
 @media only screen and (min-width : 480px) {}
 @media only screen and (min-width : 768px) {}
