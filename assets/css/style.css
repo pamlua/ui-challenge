@@ -40,6 +40,7 @@ select::-ms-expand { display: none; }
 ---------------------------*/
 html { font-size: 16px; -webkit-text-size-adjust: 100%; font-family:"Arial", sans-serif; color:#464646;}
 body { font-size: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: #e6e6e6;}
+main {padding:80px 0 100px;}
 
 @media only screen and (min-width : 480px) {}
 @media only screen and (min-width : 768px) { 
@@ -63,6 +64,21 @@ body { font-size: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 
 
 /*-------------------------
+	Headlines
+---------------------------*/
+.headline {margin-bottom: 10px; display:block;}
+.headline--1 {font-size:2.5rem;}
+.headline--2 {font-size:2rem; }
+.headline--3 {font-size:1.313rem; }
+
+@media only screen and (min-width : 480px) {}
+@media only screen and (min-width : 768px) {}
+@media only screen and (min-width : 992px) {}
+@media only screen and (min-width : 1200px) {}
+
+
+
+/*-------------------------
 	Header
 ---------------------------*/
 
@@ -79,7 +95,7 @@ body { font-size: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 	Heading
 ---------------------------*/
 
-.heading {text-align: center; margin:80px 0 30px;}
+.heading {text-align: center; padding-bottom: 40px;}
 .heading__title {font-family:"Jubilat", serif; font-weight: 600;}
 
 @media only screen and (min-width : 480px) {}
@@ -89,12 +105,10 @@ body { font-size: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot
 
 
 /*-------------------------
-	Headlines
+	Section
 ---------------------------*/
-.headline {margin-bottom: 10px; display:block;}
-.headline--1 {font-size:2.5rem;}
-.headline--2 {font-size:2rem; }
-.headline--3 {font-size:1.313rem; }
+
+.section {background-color: #fbfbfb; padding:48px; max-width: 908px; margin:0 auto;}
 
 @media only screen and (min-width : 480px) {}
 @media only screen and (min-width : 768px) {}

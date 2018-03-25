@@ -34,12 +34,13 @@
 			</div>
 		</div>
 	</header>
-	<main class="container">
+	<main class="main container">
 		<div class="heading">
 			<h2 class="heading__title headline headline--1">Which Republican President Are You?</h2>
 			<h3 class="headline headline--3">Take the Quiz and Share Your Results</h3>
 		</div>
-		<div>
+		<section class="section">
+			<span class="js-Name">[prompted name]</span>
 			<div class="social-share">
 				<a href="" class="social-share__facebook-link">(#)</a>
 				<a href="" class="social-share__twitter-link">(#)</a>
@@ -47,15 +48,47 @@
 			<form id="quiz">
 				<div class="form-element">
 					<h3 class="headline headline--3">1. Choose a snack.</h3>
+					<input type="radio" id="colorado" name="choose-snack" />
+					<label class="form-element__label" for="colorado"><span></span>Black Cherries</label>
+					<input type="radio" id="california" name="choose-snack" />
+					<label class="form-element__label" for="california"><span></span>Jelly Beans</label>
+					<input type="radio" id="campdavid" name="choose-snack" />
+					<label class="form-element__label" for="campdavid"><span></span>Popcorn</label>
+					<input type="radio" id="mississippi" name="choose-snack" />
+					<label class="form-element__label" for="mississippi"><span></span>Pigs in a Blanket</label>
 				</div>
 				<div class="form-element">
 					<h3 class="headline headline--3">2. Choose a vacation.</h3>
+					<input type="radio" id="colorado" name="choose-vacation" />
+					<label class="form-element__label" for="colorado"><span></span>Colorado</label>
+					<input type="radio" id="california" name="choose-vacation" />
+					<label class="form-element__label" for="california"><span></span>California</label>
+					<input type="radio" id="campdavid" name="choose-vacation" />
+					<label class="form-element__label" for="campdavid"><span></span>Camp David</label>
+					<input type="radio" id="mississippi" name="choose-vacation" />
+					<label class="form-element__label" for="mississippi"><span></span>Mississippi</label>
 				</div>
 				<div class="form-element">
 					<h3 class="headline headline--3">3. Choose an animal.</h3>
+					<input type="radio" id="bear" name="choose-animal" />
+					<label class="form-element__label" for="bear"><span></span>Bear</label>
+					<input type="radio" id="bobcat" name="choose-animal" />
+					<label class="form-element__label" for="bobcat"><span></span>Bobcat</label>
+					<input type="radio" id="horse" name="choose-animal" />
+					<label class="form-element__label" for="horse"><span></span>Horse</label>
+					<input type="radio" id="dog" name="choose-animal" />
+					<label class="form-element__label" for="dog"><span></span>Dog</label>
 				</div>
 				<div class="form-element">
 					<h3 class="headline headline--3">4. Choose two articles of clothing.</h3>
+					<input type="checkbox" id="cowboyboots" name="choose-clothing" />
+					<label class="form-element__label" for="cowboyboots"><span></span>Cowboy boots</label>
+					<input type="checkbox" id="tophat" name="choose-clothing" />
+					<label class="form-element__label" for="tophat"><span></span>Top Hat</label>
+					<input type="checkbox" id="socks" name="choose-clothing" />
+					<label class="form-element__label" for="socks"><span></span>Socks</label>
+					<input type="checkbox" id="bowtie" name="choose-clothing" />
+					<label class="form-element__label" for="bowtie"><span></span>Bowtie</label>
 				</div>
 				<button type="submit">Show me my results!</button>
 			</form>
@@ -66,14 +99,13 @@
 					<p>Roosevelt has also been deemed the country's first environmentalist president. In 1906, he signed the National Monuments Act, protecting sites like the Grand Canyon and preserving countless wildlife sanctuaries, national forests and federal game reserves. He also made headway with the nation’s infrastructure, instigating 21 irrigation projects.</p>
 				</div>
 				<div class="results__image"></div>
-				
 			</div>
 			<div class="social-share">
 				<span>Share your results</span>
 				<a href="" class="social-share__facebook-link">(#)</a>
 				<a href="" class="social-share__twitter-link">(#)</a>
 			</div>
-		</div>
+		</section>
 	</main>
 </body>
 
